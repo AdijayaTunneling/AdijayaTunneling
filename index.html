@@ -6,39 +6,91 @@
   <title>ADIJAYA STORE VPN</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #0d1117;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0d1117, #161b22);
       color: #f0f6fc;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding: 20px;
     }
+
+    header {
+      padding: 30px 20px 10px;
+    }
+
     h1 {
       color: #58a6ff;
+      font-size: 2rem;
+      margin: 0;
+      text-shadow: 0 0 15px rgba(88, 166, 255, 0.6);
     }
+
     .card {
-      background: #161b22;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 10px auto;
+      background: rgba(22, 27, 34, 0.9);
+      border-radius: 16px;
+      padding: 25px;
+      margin: 20px auto;
       max-width: 500px;
-      box-shadow: 0 0 10px rgba(88,166,255,0.4);
+      box-shadow: 0 0 25px rgba(88, 166, 255, 0.2);
+      backdrop-filter: blur(8px);
+      animation: fadeIn 1s ease-in-out;
     }
+
+    p {
+      margin: 0 0 20px;
+      font-size: 1rem;
+    }
+
+    .owner a {
+      color: #58a6ff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .owner a:hover {
+      text-decoration: underline;
+    }
+
     a {
       display: block;
-      margin: 8px 0;
-      color: #58a6ff;
+      margin: 12px 0;
+      padding: 10px 15px;
+      border-radius: 10px;
+      background: #21262d;
+      color: #f0f6fc;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: all 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
     }
+
     a:hover {
-      text-decoration: underline;
+      background: #58a6ff;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(88, 166, 255, 0.6);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      margin: 20px;
+      font-size: 0.8rem;
+      color: #8b949e;
     }
   </style>
 </head>
 <body>
-  <h1>ADIJAYA STORE VPN</h1>
+  <header>
+    <h1>ADIJAYA STORE VPN</h1>
+  </header>
+
   <div class="card">
-    <p>Owner: <strong>@AdijayaStoreVpn</strong></p>
+    <p class="owner">Owner: <a href="https://t.me/AdijayaStoreVpn">@AdijayaStoreVpn</a></p>
+
     <a href="https://wa.me/6281214726068">📱 WhatsApp</a>
     <a href="https://t.me/adijayavpn">👥 Grup VPN</a>
     <a href="https://t.me/adijayapedia">📢 Channel</a>
@@ -48,5 +100,10 @@
     <a href="https://t.me/AutoInstallerScript_bot">🤖 Bot Installer Script VPS</a>
     <a href="https://t.me/AutoRebuildVps_bot">🤖 Bot Auto Rebuild VPS</a>
   </div>
+
+  <footer>
+    © 2025 ADIJAYA STORE VPN
+  </footer>
 </body>
 </html>
+
