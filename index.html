@@ -30,7 +30,7 @@
       border-radius: 16px;
       padding: 25px;
       margin: 20px auto;
-      max-width: 500px;
+      max-width: 600px;
       box-shadow: 0 0 25px rgba(88, 166, 255, 0.2);
       backdrop-filter: blur(8px);
       animation: fadeIn 1s ease-in-out;
@@ -46,11 +46,6 @@
       padding-bottom: 5px;
     }
 
-    p {
-      margin: 0 0 20px;
-      font-size: 1rem;
-    }
-
     .owner a {
       color: #58a6ff;
       font-weight: bold;
@@ -61,10 +56,16 @@
       text-decoration: underline;
     }
 
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
     a {
       display: block;
-      margin: 10px 0;
-      padding: 10px 15px;
+      padding: 12px 15px;
       border-radius: 10px;
       background: #21262d;
       color: #f0f6fc;
@@ -74,11 +75,26 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.4);
     }
 
-    a:hover {
+    /* Efek hover warna kategori */
+    .bot a:hover {
       background: #58a6ff;
       color: #fff;
       transform: scale(1.05);
       box-shadow: 0 4px 15px rgba(88, 166, 255, 0.6);
+    }
+
+    .whatsapp a:hover {
+      background: #2ea043;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(46, 160, 67, 0.6);
+    }
+
+    .channel a:hover {
+      background: #a371f7;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(163, 113, 247, 0.6);
     }
 
     @keyframes fadeIn {
@@ -102,44 +118,44 @@
     <p class="owner">Owner: <a href="https://t.me/AdijayaStoreVpn1">@AdijayaStoreVpn</a></p>
   </div>
 
-  <div class="card">
-    <p class="owner">🤖 BOT MULTIFUNGSI <a href="https://t.me/adijayastorevpnbot">@adijayastorevpnbot</a></p>
+  <div class="card bot">
+    <h2>Bot</h2>
+    <div class="grid">
+      <a href="https://t.me/adijayastorevpnbot">📲 Telegram • BOT MULTIFUNGSI</a>
+      <a href="https://t.me/downloaderstalkerbot">📲 Telegram • BOT DOWNLOADER</a>
+      <a href="https://t.me/dorxladijayabot">📲 Telegram • BOT DOR XL</a>
+      <a href="https://t.me/SuntikSosialMediabot">📲 Telegram • BOT SUNTIK SOSMED</a>
+    </div>
   </div>
 
-  <div class="card">
-    <p class="owner">🤖 BOT DOWNLOADER <a href="https://t.me/downloaderstalkerbot">@downloaderstalkerbot</a></p>
-  </div>
-
-  <div class="card">
-    <p class="owner">🤖 BOT DOR XL <a href="https://t.me/dorxladijayabot">@dorxladijayabot</a></p>
-  </div>
-
-  <div class="card">
-    <p class="owner">🤖 BOT SUNTIK SOSMED <a href="https://t.me/SuntikSosialMediabot">@SuntikSosialMediabot</a></p>
-  </div>
-
-  <div class="card">
+  <div class="card whatsapp">
     <h2>Kontak & Telegram</h2>
-    <a href="https://wa.me/6281214726068">📱 WhatsApp</a>
-    <a href="https://t.me/adijayavpn">👥 Grup VPN</a>
-    <a href="https://t.me/adijayapedia">📢 Channel</a>
+    <div class="grid">
+      <a href="https://wa.me/6281214726068">💬 WhatsApp • Kontak</a>
+      <a href="https://t.me/adijayavpn">📲 Telegram • Grup VPN</a>
+      <a href="https://t.me/adijayapedia">📲 Telegram • Channel</a>
+    </div>
   </div>
 
-  <div class="card">
+  <div class="card whatsapp">
     <h2>Grup WhatsApp</h2>
-    <a href="https://chat.whatsapp.com/GefmUgRRaNdG9puJpaDwXd?mode=ac_t">👥 Grup WhatsApp 1</a>
-    <a href="https://chat.whatsapp.com/Jucef5DK6IkIZe4MinnRv7?mode=ac_t">👥 Grup WhatsApp 2</a>
-    <a href="https://chat.whatsapp.com/Hw02VRmthe67FYq5GJEfMh?mode=ac_t">👥 Grup WhatsApp 3</a>
-    <a href="https://chat.whatsapp.com/BWVJSjriGDmDREDQIL3SgY?mode=ac_t">👥 Grup WhatsApp 4</a>
-    <a href="https://chat.whatsapp.com/KTVpfGiRjkBJANlsK6JhtT?mode=ac_t">👥 Grup WhatsApp 5</a>
+    <div class="grid">
+      <a href="https://chat.whatsapp.com/GefmUgRRaNdG9puJpaDwXd?mode=ac_t">💬 WhatsApp • Grup 1</a>
+      <a href="https://chat.whatsapp.com/Jucef5DK6IkIZe4MinnRv7?mode=ac_t">💬 WhatsApp • Grup 2</a>
+      <a href="https://chat.whatsapp.com/Hw02VRmthe67FYq5GJEfMh?mode=ac_t">💬 WhatsApp • Grup 3</a>
+      <a href="https://chat.whatsapp.com/BWVJSjriGDmDREDQIL3SgY?mode=ac_t">💬 WhatsApp • Grup 4</a>
+      <a href="https://chat.whatsapp.com/KTVpfGiRjkBJANlsK6JhtT?mode=ac_t">💬 WhatsApp • Grup 5</a>
+    </div>
   </div>
 
-  <div class="card">
+  <div class="card channel">
     <h2>Channel WhatsApp</h2>
-    <a href="https://whatsapp.com/channel/0029VakoVDQFCCoZmxpOJD1c">📢 Adijaya Vpn Real</a>
-    <a href="https://whatsapp.com/channel/0029VaEpk8sEquiNEoee7Q2j">⭐ Testimoni</a>
-    <a href="https://whatsapp.com/channel/0029VampwitBqbrF0ZKojZ44">⚡ Update SSH & UDP</a>
-    <a href="https://whatsapp.com/channel/0029VaoTGdG8KMqpDo9Iww31">🎯 Suntik Sosial Media</a>
+    <div class="grid">
+      <a href="https://whatsapp.com/channel/0029VakoVDQFCCoZmxpOJD1c">📢 WA Channel • Adijaya Vpn Real</a>
+      <a href="https://whatsapp.com/channel/0029VaEpk8sEquiNEoee7Q2j">⭐ WA Channel • Testimoni</a>
+      <a href="https://whatsapp.com/channel/0029VampwitBqbrF0ZKojZ44">⚡ WA Channel • Update SSH & UDP</a>
+      <a href="https://whatsapp.com/channel/0029VaoTGdG8KMqpDo9Iww31">🎯 WA Channel • Suntik Sosial Media</a>
+    </div>
   </div>
 
   <footer>
